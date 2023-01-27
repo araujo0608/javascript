@@ -21,15 +21,32 @@
 </head>
 <body>
 
-    <div id="area" onclick="clicar()">
+    <div id="area">
         interaja...
     </div>
 
     <script>
+        var a = document.querySelector('div#area')
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
         function clicar(){
-            var a = document.querySelector('div#area')
-            a.innerText = 'Clicou!'
+            a.innerText = 'CLICOU!'
+            a.style.backgroundColor = "rgb(255,0,0)"
+        }
+
+        function entrar() {
+            a.style.backgroundColor = "rgb(7,132,205)"
+            a.innerText = "entrou"
+        }
+
+        function sair(){
+            a.style.backgroundColor = "green"
+            a.innerText = "saiu"
         }
     </script>
+
 </body>
 </html>
