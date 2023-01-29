@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAISES E NACIONALIDADES</title>
+
+    <style>
+        body, input{
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    Em que país você vive: <input type="text" name="txtPais" id="txtPais">
+    <input type="button" value="verificar" id="btnVer">
+
+    <div id="res" style="margin-top: 20;"></div>
+
+    <script>
+        var btnVer = document.querySelector('input#btnVer')
+        btnVer.addEventListener('click', verificar)
+
+        function verificar(){
+            var txtPais = document.querySelector('input#txtPais')
+            var divRes = document.querySelector('div#res')
+
+            pais = txtPais.value
+
+            if (pais == 'Brasil'){
+                divRes.innerHTML = `Você vive no ${pais}, é Brasileiro!`
+            }
+            else{
+                divRes.innerHTML = `Você vive em ${pais}, é Estrangeiro!`
+            }
+
+        }
+    </script>
+</body>
+</html>
