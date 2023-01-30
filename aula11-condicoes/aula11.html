@@ -35,7 +35,7 @@
             var velocidade = Number(txtVelocidade.value)
             resultado.innerHTML = `Sua velocidade atual é <strong>${velocidade}km/h</strong>`
 
-            if (velocidade > 60){
+            if (velocidade >= 60){
                 mensagem.innerHTML = `<p style="color:red;"> MULTADO! ACIMA DA VELOCIDADE! </p>`
             }
             else{
