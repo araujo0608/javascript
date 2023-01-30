@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(78, 130, 241);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center; /* centralizar o texto pro centro */
+}
+
+h1{
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.342);
+}
+
+section{
+    background-color: white;
+    border-radius: 10px; /*borda redonda*/
+    padding: 15px; /* espaçamento interno*/
+    width: 500px;
+    margin: auto; /* centralizar o elemento no meio da tela*/
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.39);
+
+}
+
+div#res{
+    text-align: center;
+    padding: 5px;
+}
+
+div#div-img{
+    text-align: center;
+    padding: 5px;
+}
+
+img#show-img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+
+footer{
+    font-style: italic;
+    color: white;
+    text-align: center; /* centralizar o texto pro centro */
+}
